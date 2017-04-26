@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+  background-color: #f7f9ff;
+}
+.main button {
+    display: block;
+    margin: 0 auto;
+    padding: 14px 32px;
+    background-color: #797e84;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.main h1 {
+    text-align: center;
+}
+.square {
+    width: 140px;
+    height: 140px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: #6179aa;
+    float: left;
+    font-size: 116px;
+    text-align: center;
+    color: white;
+}
+
+.square_x:hover:after {
+    content: 'X';
+}
+/* Override the hover class once a square has been clicked */
+.square_x.disabled:hover:after {
+    content: '';
+}
+.square_o:hover:after {
+    content: 'O'
+}
+/* Override the hover class once a square has been clicked */
+.square_o.disabled:hover:after {
+    content: '';
+}
+
+.board {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.disabled {
+    pointer-events: none;
+}
+.message {
+    margin: 20px;
+    text-align: center;
+}
+.clearfix {
+    clear: both;
+}
